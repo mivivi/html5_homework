@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 650px;
+}
+
+.header img {
+    width: 100%;
+    position: relative;
+}
+
+.nav {
+    position: relative;
+    top: -500px;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #363535;
+}
+
+.nav a:hover {
+    color: #000000;
+}
+
+.nav img {
+    width: 150px;
+    top: 20px;
+}
+
+.photo_landscape img {
+    width: 500px;
+}
+
+.photo_people img {
+    width: 500px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.landscape {
+    margin-right: 200px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+}
+
+.about_landscape {
+    margin-right: 500px;
+    margin-bottom: 50px;
+}
+
+.footer {
+    height: 100px;
+    background-color: #DBD9D9;
+}
+
+.nav_footer {
+    text-align: center;
+}
+
+.nav_footer li {
+    display: inline;
+    padding-bottom: 0px;
+}
+
+.nav_footer a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #363535;
+}
+
+.nav_footer a:hover {
+    color: #000000;
+}
+
+.nav_footer img {
+    width: 150px;
+    margin-bottom: -20px;
+}
