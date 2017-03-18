@@ -53,6 +53,32 @@ body {
     position: relative;
 }
 
+.player {
+    position: relative;
+    text-align: center;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    transition: all .7s ease;
+    width: 330px;
+    height: 55px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 13px rgba(0, 0, 0, .3), inset 0 1px 0px rgba(255, 255, 255, .2);
+    -moz-box-shadow: 0px 0px 13px rgba(0, 0, 0, .3), inset 0 1px 0px rgba(255, 255, 255, .2);
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, .3), inset 0 1px 0px rgba(255, 255, 255, .2);
+    top: 50%;
+    left: 50%;
+    margin: 140px 0px 0px -180px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .photo {
     width: 1280px;
     margin: auto;
@@ -112,4 +138,69 @@ body {
     width: 100%;
     height: 80px;
     background-color: black;
+}
+
+.about h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.contacts h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.contacts_container textarea {
+    resize: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 500px;
+    height: 170px;
+    font-family: Arial;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.contacts_container input[type=text] {
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 500px;
+    height: 40px;
+    font-family: Arial;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.contacts_container input[type=submit] {
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 140px;
+    height: 40px;
+    font-family: Arial;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+
+.send_contacts_button {
+    text-align: center;
+}
+
+.contacts {
+    margin: auto;
+    width: 785px;
+}
+
+.name_holder {
+    margin-bottom: 21px;
 }
