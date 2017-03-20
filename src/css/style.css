@@ -10,20 +10,19 @@ body {
 
 .container {
     max-width: 100%;
-    min-height: 100%;
+    min-width: 200px;
     margin: 0 auto;
     position: relative;
+    min-height: 100%;
 }
 
 .header {
-    width: 1280px;
     height: 520px;
     margin: auto;
-}
-
-.header img {
-    width: 1280px;
-    position: absolute;
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .header nav {
@@ -80,7 +79,8 @@ body {
 }
 
 .photo {
-    width: 1280px;
+    max-width: 1280px;
+    min-width: 200px;
     margin: auto;
     text-align: center;
 }
@@ -115,20 +115,22 @@ body {
 }
 
 .about {
-    width: 1280px;
+    max-width: 1280px;
+    min-width: 200px;
     margin: auto;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.contacts {
-    width: 1280px;
+.contacts_container {
+    max-width: 1280px;
+    min-width: 200px;
     margin: auto;
     text-align: center;
 }
 
 .content {
-    padding-bottom: 200px;
+    padding-bottom: 200px
 }
 
 .footer {
@@ -145,12 +147,27 @@ body {
     margin-bottom: 30px;
 }
 
-.contacts h2 {
+.contacts_container {
+    max-width: 1280px;
+    min-width: 200px;
+}
+
+.contacts_container h2 {
     font-size: 25px;
     margin-bottom: 30px;
 }
 
-.contacts_container textarea {
+.all_contacts {
+    max-width: 1280px;
+    min-width: 200px;
+}
+
+.contacts {
+    background-color: #D65959;
+    width: 50%;
+}
+
+.contacts textarea {
     resize: none;
     border-radius: 5px;
     background-color: #ffffff;
@@ -165,7 +182,7 @@ body {
     padding-left: 10px;
 }
 
-.contacts_container input[type=text] {
+.contacts input[type=text] {
     border-radius: 5px;
     background-color: #ffffff;
     width: 500px;
@@ -179,7 +196,7 @@ body {
     padding-left: 10px;
 }
 
-.contacts_container input[type=submit] {
+.contacts input[type=submit] {
     border-radius: 5px;
     background-color: #ffffff;
     width: 140px;
@@ -196,11 +213,19 @@ body {
     text-align: center;
 }
 
-.contacts {
-    margin: auto;
-    width: 785px;
-}
-
 .name_holder {
     margin-bottom: 21px;
+}
+
+.contact_me {
+    border-left: 1px solid black;
+    background-color: #856EDB;
+    width: 50%;
+    display: inline-block;
+}
+
+.contact_me ul li {
+    list-style: none;
+    padding-left: 8px;
+    line-height: 25px;
 }
