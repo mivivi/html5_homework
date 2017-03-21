@@ -133,15 +133,6 @@ body {
     padding-bottom: 200px
 }
 
-.footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
-    background-color: black;
-}
-
 .about h2 {
     font-size: 25px;
     margin-bottom: 30px;
@@ -164,7 +155,9 @@ body {
 
 .contacts {
     background-color: #D65959;
-    width: 50%;
+    width: 600px;
+    float: left;
+    min-width: 200px;
 }
 
 .contacts textarea {
@@ -220,12 +213,27 @@ body {
 .contact_me {
     border-left: 1px solid black;
     background-color: #856EDB;
-    width: 50%;
-    display: inline-block;
+    width: 500px;
+    float: left;
+    min-width: 200px;
 }
 
 .contact_me ul li {
     list-style: none;
     padding-left: 8px;
     line-height: 25px;
+}
+
+.clear {
+    clear: left;
+}
+
+.footer {
+    position: absolute;
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black;
 }
