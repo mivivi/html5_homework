@@ -122,30 +122,25 @@ body {
     margin-bottom: 50px;
 }
 
-.contacts_container {
-    max-width: 1280px;
-    min-width: 200px;
-    margin: auto;
-    text-align: center;
-}
-
 .content {
     padding-bottom: 200px
 }
 
 .about h2 {
     font-size: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .contacts_container {
     max-width: 1280px;
     min-width: 200px;
+    margin: auto;
 }
 
 .contacts_container h2 {
     font-size: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .all_contacts {
@@ -154,17 +149,18 @@ body {
 }
 
 .contacts {
-    background-color: #D65959;
     width: 600px;
     float: left;
     min-width: 200px;
+    text-align: center;
+    margin-left: 100px;
 }
 
 .contacts textarea {
     resize: none;
     border-radius: 5px;
     background-color: #ffffff;
-    width: 500px;
+    width: 400px;
     height: 170px;
     font-family: Arial;
     color: #445162;
@@ -173,12 +169,13 @@ body {
     line-height: 24px;
     text-align: left;
     padding-left: 10px;
+    outline: none;
 }
 
 .contacts input[type=text] {
     border-radius: 5px;
     background-color: #ffffff;
-    width: 500px;
+    width: 400px;
     height: 40px;
     font-family: Arial;
     color: #445162;
@@ -187,6 +184,7 @@ body {
     line-height: 24px;
     text-align: left;
     padding-left: 10px;
+    outline: none;
 }
 
 .contacts input[type=submit] {
@@ -202,8 +200,19 @@ body {
     text-align: center;
 }
 
-.send_contacts_button {
+.contacts input[type=submit]:hover {
+    border-radius: 5px;
+    border: 2px solid #E9E7E7;
+    background-color: #ffffff;
+    width: 140px;
+    height: 40px;
+    font-family: Arial;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
     text-align: center;
+    color: #656565;
 }
 
 .name_holder {
@@ -211,17 +220,24 @@ body {
 }
 
 .contact_me {
-    border-left: 1px solid black;
-    background-color: #856EDB;
+    border-left: 3px solid black;
+    height: 100px;
     width: 500px;
     float: left;
     min-width: 200px;
+    margin-left: 50px;
+    margin-top: 100px;
 }
 
-.contact_me ul li {
-    list-style: none;
-    padding-left: 8px;
-    line-height: 25px;
+.contact_me p {
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.tel {
+    padding-bottom: 10px;
 }
 
 .clear {
@@ -230,10 +246,29 @@ body {
 
 .footer {
     position: absolute;
-    
     left: 0;
     bottom: 0;
     width: 100%;
     height: 80px;
     background-color: black;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons i {
+    color: white;
+    margin-left: 15px;
+   font-size: 40px;
+   margin-top: 20px;
+}
+
+.icons i:hover {
+    color: white;
+    margin-left: 15px;
+   font-size: 40px;
+   margin-top: 20px;
+   font-style: 0 0 15px #00aaff;
+   text-shadow: 0 0 5px #00BFFF !important;
 }
