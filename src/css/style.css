@@ -78,72 +78,105 @@ body {
     box-sizing: border-box;
 }
 
-.photo {
-    max-width: 1280px;
-    min-width: 200px;
-    margin: auto;
-    text-align: center;
-}
-
 .images {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     justify-content: space-around;
     padding: 50px;
+    max-width: 1280px;
+    min-width: 200px;
+    margin: auto;
 }
 
-.images img {
-    border: 1px solid #ddd;
-    padding: 5px;
-    width: 250px;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
+.photo_box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin-bottom: 30px;
 }
 
-.images img:hover {
-    border: 1px solid;
-    border-color: transparent;
-    padding: 5px;
-    width: 250px;
-    overflow: hidden;
-    -webkit-transform: scale(3);
-    -moz-transform: scale(1.5);
-    -o-transform: scale(1.1);
+.photo_box:hover > .photo_wrap {
+    position: absolute;
+    top: -80px;
+    left: -50px;
+    width: 400px;
+    z-index: 99999 !important;
 }
 
-.about {
+.photo_wrap {
+    width: 100%;
+}
+
+.index_pic {
+    width: 100%;
+    margin-top: 18%;
+}
+
+.about_container {
     max-width: 1280px;
     min-width: 200px;
     margin: auto;
     text-align: center;
-    margin-bottom: 50px;
+    
 }
 
 .content {
     padding-bottom: 200px
 }
 
-.about h2 {
+.about_container h2 {
     font-size: 25px;
     margin-bottom: 50px;
+    font-family: Arial;
 }
+
+
+
+.about_description {
+    max-width: 1280px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.about_description p {
+font-family: 'Times New Roman';
+}
+
+
+.about_left {
+    width: 500px;
+    display: inline-block;
+    margin-right: 50px;
+    text-align: justify;
+
+}
+
+.about_right {
+    width: 500px;
+   display: inline-block;
+   text-align: justify;
+}
+
+
 
 .contacts_container {
     max-width: 1280px;
     min-width: 200px;
     margin: auto;
+     clear: both;
+     margin-top: 50px;
 }
 
 .contacts_container h2 {
     font-size: 25px;
     margin-bottom: 50px;
     text-align: center;
+    font-family: Arial;
 }
 
 .all_contacts {
+
     max-width: 1280px;
     min-width: 200px;
 }
@@ -158,11 +191,10 @@ body {
 
 .contacts textarea {
     resize: none;
-    border-radius: 5px;
     background-color: #ffffff;
     width: 400px;
     height: 170px;
-    font-family: Arial;
+    font-family: 'Times New Roman';
     color: #445162;
     font-size: 16px;
     font-weight: 400;
@@ -173,11 +205,10 @@ body {
 }
 
 .contacts input[type=text] {
-    border-radius: 5px;
     background-color: #ffffff;
     width: 400px;
     height: 40px;
-    font-family: Arial;
+    font-family: 'Times New Roman';
     color: #445162;
     font-size: 16px;
     font-weight: 400;
@@ -188,11 +219,10 @@ body {
 }
 
 .contacts input[type=submit] {
-    border-radius: 5px;
     background-color: #ffffff;
     width: 140px;
     height: 40px;
-    font-family: Arial;
+    font-family: 'Times New Roman';
     color: #445162;
     font-size: 16px;
     font-weight: 700;
@@ -206,7 +236,7 @@ body {
     background-color: #ffffff;
     width: 140px;
     height: 40px;
-    font-family: Arial;
+    font-family: 'Times New Roman';
     color: #445162;
     font-size: 16px;
     font-weight: 700;
@@ -260,15 +290,16 @@ body {
 .icons i {
     color: white;
     margin-left: 15px;
-   font-size: 40px;
-   margin-top: 20px;
+    font-size: 40px;
+    margin-top: 20px;
 }
 
 .icons i:hover {
     color: white;
     margin-left: 15px;
-   font-size: 40px;
-   margin-top: 20px;
-   font-style: 0 0 15px #00aaff;
-   text-shadow: 0 0 5px #00BFFF !important;
+    font-size: 40px;
+    margin-top: 20px;
+    font-style: 0 0 15px #00aaff;
+    text-shadow: 0 0 5px #00BFFF !important;
 }
+
