@@ -118,7 +118,6 @@ body {
     min-width: 200px;
     margin: auto;
     text-align: center;
-    
 }
 
 .content {
@@ -131,8 +130,6 @@ body {
     font-family: Arial;
 }
 
-
-
 .about_description {
     max-width: 1280px;
     min-width: 200px;
@@ -140,32 +137,28 @@ body {
 }
 
 .about_description p {
-font-family: 'Times New Roman';
+    font-family: 'Times New Roman';
 }
-
 
 .about_left {
     width: 500px;
     display: inline-block;
     margin-right: 50px;
     text-align: justify;
-
 }
 
 .about_right {
     width: 500px;
-   display: inline-block;
-   text-align: justify;
+    display: inline-block;
+    text-align: justify;
 }
-
-
 
 .contacts_container {
     max-width: 1280px;
     min-width: 200px;
     margin: auto;
-     clear: both;
-     margin-top: 50px;
+    clear: both;
+    margin-top: 50px;
 }
 
 .contacts_container h2 {
@@ -176,7 +169,6 @@ font-family: 'Times New Roman';
 }
 
 .all_contacts {
-
     max-width: 1280px;
     min-width: 200px;
 }
@@ -201,6 +193,7 @@ font-family: 'Times New Roman';
     line-height: 24px;
     text-align: left;
     padding-left: 10px;
+    padding-right: 10px;
     outline: none;
 }
 
@@ -215,6 +208,7 @@ font-family: 'Times New Roman';
     line-height: 24px;
     text-align: left;
     padding-left: 10px;
+    padding-right: 10px;
     outline: none;
 }
 
@@ -231,7 +225,6 @@ font-family: 'Times New Roman';
 }
 
 .contacts input[type=submit]:hover {
-    border-radius: 5px;
     border: 2px solid #E9E7E7;
     background-color: #ffffff;
     width: 140px;
@@ -302,4 +295,3 @@ font-family: 'Times New Roman';
     font-style: 0 0 15px #00aaff;
     text-shadow: 0 0 5px #00BFFF !important;
 }
-
